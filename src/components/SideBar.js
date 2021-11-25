@@ -1,12 +1,13 @@
+import digitalHouse from '../images/logo-DH.png'
 function SideBar (){
     return (
     <div>
-        	<ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+        	<ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 {/* <!-- Sidebar - Brand --> */}
 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
     <div className="sidebar-brand-icon">
-        <img className="w-100" src="assets/images/logo-DH.png" alt="Digital House"/>
+        <img className="w-100" src={digitalHouse} alt="Digital House"/>
     </div>
 </a>
 

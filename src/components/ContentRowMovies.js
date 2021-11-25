@@ -1,7 +1,7 @@
 function ContentRowMovies (){
     return(
-        <div>
-            	<div className="row">
+        
+        <div className="row">
 
 {/* <!-- Movies in Data Base --> */}
 <div className="col-md-4 mb-4">
@@ -54,8 +54,8 @@ function ContentRowMovies (){
         </div>
     </div>
 </div>
-</div>
         </div>
+        
     )
 };
 
