@@ -1,8 +1,34 @@
-import ContentRowMovies from "./ContentRowMovies";
+
+// import ContentRowMovies from "./ContentRowMovies";
 import LastMovieInDb from "./LastMovieInDb";
 import GenresInDb from "./GenresInDb";
+import ContentRowMovies1 from "./ContentRowMovies1";
 
 function ContentRowTop (){
+	const Movies= [
+		{
+		 id:'1',
+		 titulo: "Movies in Data Base",
+		 cifra:21,
+		 colorBorder: "border-left-primary",
+		 icono: "fas fa-film fa-2x text-gray-300"
+	 },
+	 {
+		 id:'2',
+		 titulo:"Total awards",
+		 cifra:79,
+		 colorBorder: "border-left-success",
+		 icono: "fas fa-award fa-2x text-gray-300"
+	 },
+	 {
+		 id:'3',
+		 titulo: "Actors quantity",
+		 cifra:49,
+		 colorBorder: "border-left-warning",
+		 icono:"fas fa-user fa-2x text-gray-300"
+	 }
+	]	
+	
 return (
 
 <div className="container-fluid">
@@ -11,7 +37,14 @@ return (
 					</div>
 				
 					{/* <!-- Content Row Movies--> */}
-				<ContentRowMovies />
+							
+				{/* <ContentRowMovies titulo="Movies in Data Base" cifra = '21' colorBorder = "card border-left-primary shadow h-100 py-2" icono = "fas fa-film fa-2x text-gray-300" />
+				<ContentRowMovies titulo="Total awards" cifra = '79' colorBorder = "card border-left-success shadow h-100 py-2" icono = "fas fa-award fa-2x text-gray-300"/>
+				<ContentRowMovies titulo="Actors quantity" cifra = '49' colorBorder = "card border-left-warning shadow h-100 py-2" icono = "fas fa-user fa-2x text-gray-300" /> */}
+					
+						< ContentRowMovies1 movies = {Movies} />
+					
+					
 					{/* <!-- End movies in Data Base --> */}
 					
 	
@@ -28,5 +61,10 @@ return (
 
 )
 }
+
+
+
+
+
 
 export default ContentRowTop;
