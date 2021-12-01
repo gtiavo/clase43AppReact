@@ -41,10 +41,12 @@ return (
 				{/* <ContentRowMovies titulo="Movies in Data Base" cifra = '21' colorBorder = "card border-left-primary shadow h-100 py-2" icono = "fas fa-film fa-2x text-gray-300" />
 				<ContentRowMovies titulo="Total awards" cifra = '79' colorBorder = "card border-left-success shadow h-100 py-2" icono = "fas fa-award fa-2x text-gray-300"/>
 				<ContentRowMovies titulo="Actors quantity" cifra = '49' colorBorder = "card border-left-warning shadow h-100 py-2" icono = "fas fa-user fa-2x text-gray-300" /> */}
+					 <div className="row">
+					{Movies.map((movie, i)=>{
+					return	< ContentRowMovies1  {...movie} key = {i} />
 					
-						< ContentRowMovies1 movies = {Movies} />
-					
-					
+					})}
+					</div>
 					{/* <!-- End movies in Data Base --> */}
 					
 	
